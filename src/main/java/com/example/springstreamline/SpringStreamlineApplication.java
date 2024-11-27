@@ -8,28 +8,17 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.
         SpringBootApplication;
 
-/**
- * Main application class for SpringStreamline.
- */
+
 @SpringBootApplication
 @SuppressWarnings({
-        "checkstyle:HideUtilityClassConstructor",
-        "checkstyle:FinalClass"
+        "checkstyle:FinalClass",
+        "checkstyle:HideUtilityClassConstructor"
 })
 public class SpringStreamlineApplication {
-
-    /**
-     * Private constructor to prevent instantiation.
-     */
     private SpringStreamlineApplication() {
         // Prevent instantiation
     }
 
-    /**
-     * The main entry point for the SpringStreamline application.
-     *
-     * @param args the command-line arguments
-     */
     public static void main(final String[] args) {
         SpringApplication.run(
                 SpringStreamlineApplication.class,
@@ -37,3 +26,4 @@ public class SpringStreamlineApplication {
         );
     }
 }
+
