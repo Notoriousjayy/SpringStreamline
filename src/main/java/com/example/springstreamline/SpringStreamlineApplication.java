@@ -16,13 +16,6 @@ import org.springframework.boot.autoconfigure.
 public class SpringStreamlineApplication {
 
     /**
-     * Private constructor to prevent instantiation of this utility class.
-     */
-    private SpringStreamlineApplication() {
-        // Prevent instantiation
-    }
-
-    /**
      * The main entry point for the SpringStreamline application.
      *
      * @param args the command-line arguments
