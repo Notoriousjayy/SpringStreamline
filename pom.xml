@@ -64,9 +64,15 @@
                 <configuration>
                     <!-- Specify the location of your custom Checkstyle configuration -->
                     <configLocation>checkstyle.xml</configLocation>
+                    <!-- Enable suppression processing -->
+                    <enableSuppressionsInCheckstyleConfig>true</enableSuppressionsInCheckstyleConfig>
+                    <!-- Specify the Checkstyle version -->
+                    <checkstyleVersion>9.3</checkstyleVersion>
                     <!-- Ensure the build fails on Checkstyle violations -->
                     <failsOnError>true</failsOnError>
-                    <!-- Optional: Output format -->
+                    <!-- Provide detailed logs -->
+                    <verbose>true</verbose>
+                    <!-- Output Checkstyle violations in the console -->
                     <consoleOutput>true</consoleOutput>
                 </configuration>
                 <executions>
