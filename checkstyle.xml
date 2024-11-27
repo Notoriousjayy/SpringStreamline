@@ -3,16 +3,16 @@
   "https://checkstyle.org/dtds/configuration_1_3.dtd">
 <module name="Checker">
     <module name="TreeWalker">
-        <!-- FinalClass check with id -->
+        <!-- FinalClass check with ID -->
         <module name="FinalClass">
             <property name="id" value="FinalClass"/>
         </module>
-        <!-- HideUtilityClassConstructor check with id -->
+        <!-- HideUtilityClassConstructor check with ID -->
         <module name="HideUtilityClassConstructor">
             <property name="id" value="HideUtilityClassConstructor"/>
         </module>
-        <!-- Add other checks as needed -->
     </module>
-    <!-- Move SuppressWarningsFilter below TreeWalker -->
+
+    <!-- SuppressWarningsFilter -->
     <module name="SuppressWarningsFilter"/>
 </module>
