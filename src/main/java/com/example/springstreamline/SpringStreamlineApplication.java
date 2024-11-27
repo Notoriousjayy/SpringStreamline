@@ -1,17 +1,18 @@
 /**
- * This package contains the main entry point for the SpringStreamline application.
+ * This package contains the main entry point and core components
+ * for the SpringStreamline application.
  */
 package com.example.springstreamline;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.
-    SpringBootApplication;
+        SpringBootApplication;
 
 /**
  * Main application class for SpringStreamline.
  */
 @SpringBootApplication
-public class SpringStreamlineApplication {
+public final class SpringStreamlineApplication {
 
     /**
      * Private constructor to prevent instantiation of this utility class.
