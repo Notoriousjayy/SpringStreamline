@@ -64,6 +64,8 @@
                 <configuration>
                     <!-- Specify the location of your custom Checkstyle configuration -->
                     <configLocation>checkstyle.xml</configLocation>
+                    <!-- Specify the suppressions file -->
+                    <suppressionsLocation>suppressions.xml</suppressionsLocation>
                     <!-- Enable suppression processing -->
                     <enableSuppressionsInCheckstyleConfig>true</enableSuppressionsInCheckstyleConfig>
                     <!-- Specify the Checkstyle version -->
