@@ -1,5 +1,5 @@
 # Use an official OpenJDK image as the base image
-FROM openjdk:17-jdk-slim
+FROM openjdk:17-jdk-slim AS builder
 
 # Set a working directory in the container
 WORKDIR /app
@@ -18,8 +18,14 @@ COPY pom.xml .
 # Run Maven to build the application
 RUN ./mvnw clean package -DskipTests
 
-# Copy the built JAR file into the container
-COPY target/*.jar app.jar
+# Use a smaller image for the runtime
+FROM openjdk:17-jdk-slim
+
+# Set a working directory in the container
+WORKDIR /app
+
+# Copy the built JAR file from the builder stage
+COPY --from=builder /app/target/*.jar app.jar
 
 # Expose the port on which the application will run
 EXPOSE 8080
