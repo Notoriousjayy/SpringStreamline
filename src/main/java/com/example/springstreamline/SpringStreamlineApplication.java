@@ -12,7 +12,15 @@ import org.springframework.boot.autoconfigure.
  * Main application class for SpringStreamline.
  */
 @SpringBootApplication
+@SuppressWarnings("checkstyle:HideUtilityClassConstructor")
 public class SpringStreamlineApplication {
+
+    /**
+     * Private constructor to prevent instantiation.
+     */
+    private SpringStreamlineApplication() {
+        // Prevent instantiation
+    }
 
     /**
      * The main entry point for the SpringStreamline application.
