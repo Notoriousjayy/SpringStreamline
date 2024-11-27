@@ -12,7 +12,10 @@ import org.springframework.boot.autoconfigure.
  * Main application class for SpringStreamline.
  */
 @SpringBootApplication
-@SuppressWarnings("checkstyle:HideUtilityClassConstructor")
+@SuppressWarnings({
+        "checkstyle:HideUtilityClassConstructor",
+        "checkstyle:FinalClass"
+})
 public class SpringStreamlineApplication {
 
     /**
@@ -28,6 +31,7 @@ public class SpringStreamlineApplication {
      * @param args the command-line arguments
      */
     public static void main(final String[] args) {
-        SpringApplication.run(SpringStreamlineApplication.class, args);
+        SpringApplication.run(
+                SpringStreamlineApplication.class, args);
     }
 }
