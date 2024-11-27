@@ -32,6 +32,8 @@ public class SpringStreamlineApplication {
      */
     public static void main(final String[] args) {
         SpringApplication.run(
-                SpringStreamlineApplication.class, args);
+                SpringStreamlineApplication.class,
+                args
+        );
     }
 }
