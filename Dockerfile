@@ -4,14 +4,15 @@ FROM openjdk:17-jdk-slim
 # Set a working directory in the container
 WORKDIR /app
 
-# Copy the Maven build file (pom.xml) and Maven wrapper files
+# Copy Maven wrapper and related files
 COPY mvnw .
 COPY .mvn .mvn
 
-# Copy the source code into the container
-COPY src src
+# Ensure the Maven wrapper script is executable
+RUN chmod +x mvnw
 
-# Copy the Maven project file
+# Copy the application source code
+COPY src src
 COPY pom.xml .
 
 # Run Maven to build the application
