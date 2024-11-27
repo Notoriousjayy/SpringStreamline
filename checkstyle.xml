@@ -4,9 +4,16 @@
 <module name="Checker">
     <!-- Enable SuppressWarningsFilter -->
     <module name="SuppressWarningsFilter"/>
+
     <module name="TreeWalker">
-        <!-- Include default checks or customize as needed -->
-        <module name="FinalClass"/>
-        <!-- Add other modules as per your requirements -->
+        <!-- FinalClass check with id -->
+        <module name="FinalClass">
+            <property name="id" value="FinalClass"/>
+        </module>
+        <!-- HideUtilityClassConstructor check with id -->
+        <module name="HideUtilityClassConstructor">
+            <property name="id" value="HideUtilityClassConstructor"/>
+        </module>
+        <!-- Add other checks as needed -->
     </module>
 </module>
