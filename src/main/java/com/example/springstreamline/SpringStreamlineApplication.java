@@ -12,7 +12,7 @@ import org.springframework.boot.autoconfigure.
  * Main application class for SpringStreamline.
  */
 @SpringBootApplication
-public final class SpringStreamlineApplication {
+public class SpringStreamlineApplication {
 
     /**
      * Private constructor to prevent instantiation of this utility class.
