@@ -12,6 +12,7 @@ import org.springframework.boot.autoconfigure.
  * Main application class for SpringStreamline.
  */
 @SpringBootApplication
+@SuppressWarnings("checkstyle:FinalClass")
 public class SpringStreamlineApplication {
 
     /**
