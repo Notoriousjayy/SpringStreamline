@@ -5,15 +5,17 @@ FROM openjdk:17-jdk-slim AS builder
 WORKDIR /app
 
 # Copy Maven wrapper and related files
-COPY mvnw .
+COPY mvnw . 
 COPY .mvn .mvn
 
 # Ensure the Maven wrapper script is executable
 RUN chmod +x mvnw
 
-# Copy the application source code
+# Copy the application source code and configuration files
 COPY src src
-COPY pom.xml .
+COPY pom.xml . 
+COPY checkstyle.xml . 
+COPY suppressions.xml . 
 
 # Run Maven to build the application
 RUN ./mvnw clean package -DskipTests
