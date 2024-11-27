@@ -16,7 +16,7 @@ import org.springframework.boot.autoconfigure.
 })
 public class SpringStreamlineApplication {
 
-    private SpringStreamlineApplication() {
+    protected SpringStreamlineApplication() {
         // Prevent instantiation
     }
 
