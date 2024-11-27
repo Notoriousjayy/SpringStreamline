@@ -10,10 +10,8 @@ import org.springframework.boot.autoconfigure.
 
 
 @SpringBootApplication
-@SuppressWarnings({
-        "checkstyle:FinalClass",
-        "checkstyle:HideUtilityClassConstructor"
-})
+@SuppressWarnings("checkstyle:FinalClass")
+@SuppressWarnings("checkstyle:HideUtilityClassConstructor")
 public class SpringStreamlineApplication {
     private SpringStreamlineApplication() {
         // Prevent instantiation
